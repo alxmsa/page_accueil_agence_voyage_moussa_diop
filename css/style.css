@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -58,7 +59,106 @@ a {
     color: var(--main-bg-color)
 }
 
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+
+/****** Header ***********/
+
+header img {
+    height: 25px;
+    width: auto;
+    margin-top: 20px;
+}
+header div {
+    width: 300px;
+}
+header p {
+    padding: 15px;
+}
+header p:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    border-top: 1px solid var(--main-color);
+}
+
+/****** Main search ***********/
+
+#main_search form {
+    margin-bottom: 20px;
+}
+#main_search p{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#main_search h2{
+    margin-bottom: 8px;
+} 
+#localisation {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    align-items: center;
+    justify-content: center;
+}
+i {
+    color: #000;
+    font-size: 18px;
+}
+#main_search input{
+    height: 50px;
+}
+input[type=submit] {
+    background-color: #0065FC;
+    color: #F2F2F2;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #0065FC;
+    width: 140px;
+}
+input[value=Rechercher] {
+    font-size: 18px;
+    font-weight: bold;
+}
+input[type=search]{
+    border: 1px solid #F2F2F2;
+    width: 195px;
+}
+input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+
+/****** Main filter ***********/
+#main_filter {
+    justify-content: space-around;
+}
+#main_filter p {
+    height: 50px;
+    padding: 5px 30px;
+}
+.main_filter_word {
+    font-weight: bold;
+}
+.main_filter_border {
+    width: auto;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+}
+
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
