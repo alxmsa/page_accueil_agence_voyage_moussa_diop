@@ -75,7 +75,7 @@ a {
 /****** Header ***********/
 
 header img {
-    height: 25px;
+    height: 19px;
     width: auto;
     margin-top: 20px;
 }
@@ -88,13 +88,13 @@ header p {
 header p:hover {
     color: var(--main-color);
     cursor: pointer;
-    border-top: 1px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 /****** Main search ***********/
 
 #main_search form {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #main_search p{
     margin-top: 0;
@@ -142,19 +142,47 @@ input::placeholder {
 
 /****** Main filter ***********/
 #main_filter {
+    height: 50px;
     justify-content: space-around;
+    width: 758px;
+    margin-bottom: 20px;
 }
 #main_filter p {
-    height: 50px;
-    padding: 5px 30px;
+    font-size: 17px;
+    font-weight: 700;
 }
 .main_filter_word {
     font-weight: bold;
 }
 .main_filter_border {
+    display: flex;
     width: auto;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+}
+.main_filter_border:hover {
+    background-color: #DEEBFF;
+}
+.main_filter_border img {
+    height: 22px;
+    margin: auto;
+    padding-left: 10px;
+}
+.main_filter_border p {
+    margin: auto;
+    padding: 4px 19px 4px 10px;
+}
+
+/****** Main filter ***********/
+#main_info {
+    margin-bottom: 20px;
+}
+#main_info img{
+    height: 24px;
+    margin: auto 10px;
+}
+#main_info p {
+    font-size: 16px;
 }
 
 /****** Hebergements And Populaires ***********/
