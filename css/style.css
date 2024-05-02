@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .main-container {
@@ -33,7 +34,7 @@ a {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .card {
@@ -124,6 +125,7 @@ input[type=submit] {
     border-radius: 0 10px 10px 0;
     border: 1px solid #0065FC;
     width: 140px;
+    cursor: pointer;
 }
 input[value=Rechercher] {
     font-size: 18px;
@@ -176,7 +178,7 @@ input::placeholder {
 
 /****** Main filter ***********/
 #main_info {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 #main_info img{
     height: 24px;
@@ -244,13 +246,6 @@ input::placeholder {
     margin-bottom: 4px;
 }
 
-.hebergements-cards {
-    margin: 0;
-}
-
-.hebergements-cards {
-    margin-bottom: 5px;
-}
 #hebergements-plus {
     font-size: 18px;
     margin-top: 30px;
@@ -301,8 +296,53 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+#activites{
+    width: 96%;
+    margin: 70px auto auto auto;
+}
+.activites-cards  {
+    display: flex;
+    justify-content: space-between;
+} 
+.activites-cards .card-content {
+    width: 67%;
+}
+.activites-cards img {
+    height: 439px;
+    width: 297.5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#activites article {
+    padding: 0;
+}
+#activites h3 {
+    padding: 0 0 20px 15px;
+    width: 230px;
+}
 
+/****** Footer ***********/
+
+footer {
+    background-color: #d9d9d9;
+    margin-top: 50px;
+}
+footer div {
+    margin-right: 200px;
+}
+footer h3 {
+    width: 200px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+footer a {
+    display: block;
+    padding: 10px 20px;
+    width: 200px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
