@@ -112,9 +112,8 @@ header p:hover {
     align-items: center;
     justify-content: center;
 }
-i {
-    color: #000;
-    font-size: 18px;
+#localisation i {
+    color: #000!important;
 }
 #main_search input{
     height: 50px;
@@ -141,7 +140,22 @@ input::placeholder {
     color: #000;
     text-align: center;
 }
+.submit_dt{
+    display: block;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.submit_mq{
+    background-color: #0065FC;
+    color: #F2F2F2;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #0065FC;
+    width: 40px;
+    cursor: pointer;
 
+    display: none;
+}
 /****** Main filter ***********/
 #main_filter {
     height: 50px;
@@ -166,24 +180,23 @@ input::placeholder {
 }
 .main_filter_border {
     display: flex;
-    width: auto;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
+    align-items: center;
 }
 .main_filter_border:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 }
-.main_filter_border img {
-    height: 22px;
-    margin: auto;
-    padding-left: 10px;
+.main_filter_border i{
+    display: block;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 .main_filter_border p {
-    margin: auto;
-    padding: 4px 19px 4px 10px;
+    margin: 10px;
+    /* padding: 4px 19px 4px 10px; */
 }
-
 /****** Main filter ***********/
 #main_info {
     margin-bottom: 50px;
@@ -201,13 +214,6 @@ input::placeholder {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -313,13 +319,15 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
 } 
-.activites-cards .card-content {
+/* .activites-cards .card-content {
     width: 67%;
+} */
+.regul-width {
+    width: 23%;
 }
 .activites-cards img {
-    height: 439px;
+    height: 350px;
     width: 100%;
-    max-width: 297.5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -328,7 +336,7 @@ input::placeholder {
 }
 #activites h3 {
     padding: 0 0 20px 15px;
-    width: 230px;
+/*     width: 230px; */
 }
 
 /****** Footer ***********/
@@ -353,12 +361,22 @@ footer a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media (max-width: 1400px) {
+    .activites-cards img {
+        max-width: 297.5px;
+    }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }    
     .hebergements {
         width: 100%;
     }
@@ -400,12 +418,18 @@ footer a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
     header {
         display: block!important;
     }
     header img {
        display: block;
        margin: 20px auto auto auto;
+    }
+    .main-container {
+        padding: 0;
     }
     #logo-mquerie {
         margin: auto;
@@ -422,26 +446,40 @@ footer a {
         width: 100%;
         text-align: center;
     }
-    #main_filter {
-        display: block;
+    #main_search h2, #main_search p{
+        padding: 0 30px;
+    }
+    #allForOne{
+        justify-content: center;
+    }
+    #main_filter h2 {
+        margin-left: 30px;
     }
     #main_filter {
+        display: block;
         width: 100%;
         height: auto;
     }
+
     .main_filter_div {
         margin-bottom: 10px;
     }
     .main_filter_border {
         height: 40px;
-        width: 200px;
+        width: 10.5rem;
+        margin: auto;
     }
     #main_info {
         margin-bottom: 20px;
+        padding: 0 30px;
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 0;
+    }    
     .hebergements {
         background-color: #fff!important;
     }
@@ -463,6 +501,7 @@ footer a {
     } */
     #activites {
         margin-top: 20px;
+        padding: 0 30px;
     }
     #activites h3{
         font-size: 16px;
@@ -488,4 +527,13 @@ footer a {
         padding-top: 20px;
         padding-left: 30px;
     }
+    .submit_dt{
+        display: none;
+    }
+    .submit_mq{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
 }

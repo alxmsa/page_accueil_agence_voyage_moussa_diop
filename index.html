@@ -45,7 +45,7 @@
           <form method="get" action="">
             <div class="d-flex" id="allForOne">
               <div id="localisation" class="d-flex">
-                <i class="uil uil-map-marker"></i>
+                <i class="fa-solid fa-location-dot"></i>
               </div>
               <label for="site-search"></label>
               <input
@@ -53,7 +53,10 @@
                 id="site-search"
                 placeholder="Marseille, France"
               />
-              <input type="submit" value="Rechercher" />
+              <input type="submit" class="submit_dt" value="Rechercher" />
+              <div class="submit_mq">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
             </div>
           </form>
         </section>
@@ -62,21 +65,21 @@
           <h2>Filtres</h2>
           <div class="d-flex main_filter_div">
             <div class="main_filter_border">
-              <img src="/images/icons/icon_economie.png" alt="" />
+              <i class="fa-solid fa-money-bill"></i>
               <p>Économique</p>
             </div>
             <div class="main_filter_border">
-              <img src="/images/icons/icon_familial.png" alt="" />
+              <i class="fa-solid fa-person"></i>
               <p>Familial</p>
             </div>
           </div>
           <div class="d-flex main_filter_div">
             <div class="main_filter_border">
-              <img src="/images/icons/icon_romantique.png" alt="" />
+              <i class="fa-solid fa-heart"></i>
               <p>Romantique</p>
             </div>
             <div class="main_filter_border">
-              <img src="/images/icons/icon_nosPepites.png" alt="" />
+              <i class="fa-solid fa-fire"></i>
               <p>Nos pépites</p>
             </div>
           </div>
@@ -352,7 +355,7 @@
         <section id="activites">
           <h2>Activités à Marseille</h2>
           <div class="activites-cards">
-            <a href="#">
+            <a href="#" class="regul-width">
               <article class="card">
                 <img
                   src="./images/activites/reno-laithienne.jpg"
@@ -365,7 +368,7 @@
                 </div>
               </article>
             </a>
-            <a href="#">
+            <a href="#" class="regul-width">
               <article class="card">
                 <img
                   src="./images/activites/paul-hermann.jpg"
@@ -378,7 +381,7 @@
                 </div>
               </article>
             </a>
-            <a href="#">
+            <a href="#" class="regul-width">
               <article class="card">
                 <img
                   src="./images/activites/kilyan-sockalingum.jpg"
@@ -391,7 +394,7 @@
                 </div>
               </article>
             </a>
-            <a href="#">
+            <a href="#" class="regul-width">
               <article class="card">
                 <img
                   src="./images/activites/florian-wehde.jpg"
@@ -426,5 +429,9 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://kit.fontawesome.com/3a62503aaf.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
