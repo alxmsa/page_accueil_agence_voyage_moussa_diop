@@ -51,7 +51,9 @@ a {
 .card-title {
     font-size: 16px;
 }
-
+.card-title:hover {
+    color: var(--main-color);
+}
 .euro {
     font-weight: 700;
 }
@@ -129,6 +131,10 @@ input[type=submit] {
 input[value=Rechercher] {
     font-size: 18px;
     font-weight: bold;
+}
+input[value=Rechercher]:hover{
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
 }
 input[type=search]{
     border: 1px solid #F2F2F2;
@@ -356,6 +362,9 @@ footer a {
     display: block;
     padding: 10px 20px;
     width: 85%;
+}
+footer a:hover {
+    color: var(--main-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
