@@ -85,10 +85,10 @@ header img {
 header div {
     width: 300px;
 }
-header p {
+header a {
     padding: 15px;
 }
-header p:hover {
+header a:hover {
     color: var(--main-color);
     cursor: pointer;
     border-top: 2px solid var(--main-color);
@@ -220,6 +220,12 @@ input::placeholder {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+}
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
